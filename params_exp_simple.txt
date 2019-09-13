@@ -1,0 +1,42 @@
+FILE: exp/exp_simple/ex_simple.cpp
+
+=========================================
+FILE: exp/exp_simple/best_fit_arch.cpp
+
+=========================================
+FILE: exp/exp_simple/test_bo.cpp
+
+=========================================
+FILE: exp/exp_simple/test_eval.cpp
+
+=========================================
+FILE: exp/exp_simple/test_env_adapt.cpp
+
+kernel
+^^^^^^
+- bool optimize_noise = false [default value, from src/limbo/kernel/kernel.hpp][]
+- double noise = 1e-10 [defined in exp/exp_simple/test_env_adapt.cpp][]
+
+stop_maxpredictedvalue
+^^^^^^^^^^^^^^^^^^^^^^
+- double ratio = 0.9 [default value, from src/limbo/stop/max_predicted_value.hpp][]
+
+acqui_ucb
+^^^^^^^^^
+- double alpha = 0.2 [defined in exp/exp_simple/test_env_adapt.cpp][]
+
+bayes_opt_boptimizer
+^^^^^^^^^^^^^^^^^^^^
+- int hp_period = -1 [default value, from src/limbo/bayes_opt/boptimizer.hpp][]
+
+bayes_opt_bobase
+^^^^^^^^^^^^^^^^
+- int stats_enabled = true [defined in exp/exp_simple/test_env_adapt.cpp][]
+- bool bounded = true [default value, from src/limbo/bayes_opt/bo_base.hpp][]
+
+kernel_maternfivehalves
+^^^^^^^^^^^^^^^^^^^^^^^
+- double sigma_sq = 1 [default value, from src/limbo/kernel/matern_five_halves.hpp][]
+- double l = 0.4 [defined in exp/exp_simple/test_env_adapt.cpp][]
+
+=========================================
